@@ -27,7 +27,7 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/hello')
     def hello():
-        return "hello world"
+        return 'Hello, World!'
 
     from . import db
     db.init_app(app)
@@ -40,3 +40,4 @@ def create_app(test_config=None):
     app.add_url_rule('/', endpoint='index')
 
     return app
+
