@@ -25,10 +25,13 @@
 
 ## Maintainers
 #### @Happy-orange-juice
+#### （李宗20191340017）
 
 ## Contributors
-#### @895201599 
+#### @895201599
+#### （丁伟遥20191060015）
 #### @vincentwoody
+#### （王童尧20191060050）
 
 ## License
 #### MIT © Richard Littauer
