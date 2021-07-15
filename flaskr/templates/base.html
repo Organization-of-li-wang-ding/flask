@@ -1,9 +1,7 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - Flaskr</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<link rel="style" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
-<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav>
   <h1>Flaskr</h1>
@@ -11,7 +9,7 @@
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
       <li>
-        <button type="button" class="btn btn-default btn-lg active">
+        <button type="button" class="btn btn-success">
           <a href="{{ url_for('auth.logout') }}">
             Log Out
           </a>
@@ -44,3 +42,16 @@
   {% endfor %}
   {% block content %}{% endblock %}
 </section>
+<div style=" position: relative;left: 300px;top: 200px;">
+    <ul class="pagination">
+      <li style="text-align: center;"><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+</div>
+
+
